@@ -18,5 +18,10 @@ Class Model_mahasiswa extends CI_Model
     {
         $this->db->delete('mahasiswa',array('nim' => $nim));
     }
+
+    public function adddemo($data)
+    {
+      $this->db->insert('demo', $data);
+    }
 }
 ?>

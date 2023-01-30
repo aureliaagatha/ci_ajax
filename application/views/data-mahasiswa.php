@@ -57,8 +57,8 @@
             </div>
         </div>
 
-        <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/assetsDataTables/datatables.min.css"/>
-        <script src="<?php echo base_url()?>/assets/DataTables/datatables.min.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/assets/DataTables/datatables.min.css"/>
+        <script src="<?php echo base_url()?>/assets/DataTables/datatables.min.js"></script>
         <script>
             $(document).ready( function () {
                 $('#myTable').DataTable();

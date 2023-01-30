@@ -11,8 +11,28 @@ class Mahasiswa extends CI_Controller {
 
     function index()
     {
-        $this->load->view('index');
+        // $this->load->view('index');
+        $this->load->view('demo');
     }
+
+    ////////////////////////////////
+    function tambahdemo(){
+
+        $number_of_rows = count($_POST)-1;
+        $name=$_POST['Name'];
+        $phone=$_POST['Phone'];
+        
+        for($i=0; $i<$number_of_rows; $i++) {
+            $data = array(
+                'name'  => $name[$i], 
+                'phone' => $phone[$i],
+            );
+            $this->model_mahasiswa->adddemo($data);
+        }
+        redirect('mahasiswa');
+     }
+
+    /////////////////////////////////////////
 
     function tampilMahasiswa()
     {
